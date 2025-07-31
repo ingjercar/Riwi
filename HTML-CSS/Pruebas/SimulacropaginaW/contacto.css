@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans",sans-serif;
+}
+.title{
+    font-size: 20px;
+    top: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+header{
+    background-image: url("img/banner.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 32rem;
+}
+.encabezado{
+    padding: 4%;
+    font-size: 22px;
+}
+.n-l{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    margin-bottom: 7%;
+    top: 2%;
+}
+.n-l > nav{
+    display: flex;
+    gap: 2rem;
+}
+.texto-bajo{
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+/* Encabezado arriba  ///////////////                    /// */
+
+h3{
+    display: flex;
+    margin-top: 3%;
+    margin-bottom:3%;
+    font-size: 32px;
+    justify-content: center;
+}
+.imgformulario{
+    display: grid;
+    justify-content: center;
+}
+.form{
+    background: white;
+    display: grid;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-top: -8%;
+    position: sticky;
+    height: 500px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+form{
+    margin-top: 30px;
+}
+label{
+    display: flex;
+    margin-top: 20px;
+}
+input{
+    display: flex;
+    justify-content: center;
+    width: 840px;
+}
+textarea{
+    width: 840px;
+    height: 230px;
+}
+label > span{
+    
+    width: 70px; 
+    /* Aca le damos un ancho al texto para que cada cuadrito de los input quede alineados */
+}
+#submit{
+    color: antiquewhite;
+    margin: 0px 0px 20px;
+    width: 14%;
+    height: 40%;
+    background: black;
+    box-shadow: 10px 10px 18px rgb(5, 2, 169);
+}
+
+/* animacion para el titulo BlogDeCafe */
+@keyframes crece {/* Animacion que hace crecer el elmento  */
+    0%{
+        transform: scale(2);
+        font-size: 8rem;
+        color: rgb(59, 186, 236);
+
+    }
+}
+h1:hover{
+    animation: crece 0.3s forwards;
+    box-shadow: 10px 10px 18px rgb(115, 113, 247);
+    border-radius: 10px;
+}
+
+@keyframes wiggle{/* Animacion que hace vibrar elemento effects cundo se pasa el cursor por encima*/
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg);}
+    75%{transform: rotate(5deg);}
+    100%{transform: rotate(0deg);}
+}
+
+#submit:hover{
+    border-radius: 10px;
+    font-family: "Playwrite HU", cursive;
+    animation: wiggle 0.3s;
+}
+
+/* Pie de pagina//////////////////// */
+
+footer{
+    background: black;
+    margin: 80px 0px 0px;
+    padding: 0px 0px 30px;
+    bottom: 0;
+    height: 120px;
+    width: 100%; 
+}
+.pie{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.n-l-p{ 
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.navpie{
+    display: flex;
+    gap: 3rem;
+    margin-right: 340px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+/* Breakpoint para moviles */
+@media (max-width: 767px){
+    main{
+        padding: 10px 20px;
+    }
+    img{
+        max-width: 200px;
+    }
+    form{
+
+        height: 60px;
+        width: 250px;
+    }
+    .form{
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+    }
+    button{
+        grid-row: 11/12;
+    }
+    /* input{
+        max-width: 60px;
+    }
+    textarea{
+        max-width: 60px;
+    } */
+    .n-l{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .n-l-p{
+        flex-direction: column;
+    }
+}
+
+/* Breakpoint para tablets */
+@media(max-width:991px){
+    img{
+        max-width: 700px;
+    }
+    form{
+
+        height: 60px;
+        width: 250px;
+    }
+    .form{
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+    }
+    button{
+        grid-row: 11/12;
+    }
+}

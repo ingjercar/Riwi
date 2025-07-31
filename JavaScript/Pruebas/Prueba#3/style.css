@@ -1,0 +1,126 @@
+*{
+    font-family: "Outfit", sans-serif;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    header {
+        grid-column: 1 / 3;
+        grid-row: 1/2;
+        background-color: #fcf1ff;
+        padding: 20px;
+        text-align: center; 
+    }
+    footer {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        background-color: #fcf1ff;
+        padding: 20px;
+        text-align: end;
+        align-self: baseline;
+
+
+    }
+    main {
+        grid-column: 3 / 13;
+        grid-row: 1 / span 2;
+        padding: 20px;
+
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+nav {
+    gap: 15px;  
+}
+.off {
+    display: none;
+}
+.on {
+    display: block;
+}
+ul{
+    gap: 10px;
+}
+li {
+    list-style-type: none;
+    padding: 1rem;
+    border-color: #4f5153;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    gap: 10px;
+}
+.Loginn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-color: #4f5153;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 1rem;
+}
+button {
+    background-color: #442352;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+h1 {
+    border-left: rgb(116, 1, 1);
+    color: rgb(32, 4, 49);
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.events {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+li {
+    gap: 10px;
+}
+#porfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #575757 1px 1px 1px;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+a {
+    border-bottom: #000000 1px solid;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

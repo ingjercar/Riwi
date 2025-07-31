@@ -1,0 +1,14 @@
+{
+  "libros": [
+    {
+      "nombre": "100 años de soledad",
+      "escritor": "GGM",
+      "id": "1"
+    },
+    {
+      "nombre": "Eln",
+      "escritor": "Guerrillo",
+      "id": "2"
+    }
+    ]
+}

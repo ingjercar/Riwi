@@ -1,0 +1,13 @@
+select option{
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.view{
+    display: none;
+}
+
+.active{
+    display: block;
+}

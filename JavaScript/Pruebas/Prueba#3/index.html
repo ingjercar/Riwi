@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WHATS HAPPENING TODAY</h1>
+        <nav>
+            <a class="on" data-link="login" href="/login" id="oppen-sesion">Login</a>
+            <a class="on" data-link="register" href="/register" >Create User</a>
+            <a class="off" data-link="create" href="/create" id="userStuff">Create Event</a>
+            <a class="off" data-link="events" href="/events" id="userStuf">Event List</a>
+            <a class="off" data-link="adminEvents" href="/adminEvents" id="admin-list">admin List</a>
+        </nav>
+        <img src="./img/img2,1.webp" id="porfile" class="off">
+        <h4 id="name" class="off"></h4>
+        <h3 id="UserRole"></h3>
+    </header>
+
+    <main>
+
+        <div id="content">
+
+        </div>
+
+    </main>
+
+    <footer>
+        <a class="off" data-link="logout" href="/logout" id="close-sesion">Logout</a>
+        <p>&copy; 2023 Argos Group Company</p>
+        <p>Follow us on <a href="#">Twitter</a> and <a href="#">Facebook</a></p>
+    </footer>    
+    <script src="script.js"></script>
+</body>
+</html>

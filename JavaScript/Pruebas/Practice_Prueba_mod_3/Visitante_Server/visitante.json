@@ -1,0 +1,14 @@
+{
+  "personas": [
+    {
+      "nombre": "Quico",
+      "apellido": "Pereira",
+      "id": "1"
+    },
+    {
+      "nombre": "Elver",
+      "apellido": "Galarga",
+      "id": "2"
+    }
+  ]
+}

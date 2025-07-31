@@ -1,0 +1,29 @@
+{
+  "productos": [
+    {
+      "nombre": "Terrenos",
+      "precio": 1465415165400,
+      "id": "2"
+    },
+    {
+      "id": " 15",
+      "nombre": "Monitor",
+      "precio": 200
+    },
+    {
+      "id": " 150",
+      "nombre": "Monitor",
+      "precio": 200
+    },
+    {
+      "id": " 150",
+      "nombre": "Monitor",
+      "precio": 200
+    },
+    {
+      "id": " 150",
+      "nombre": "Monitor",
+      "precio": 200
+    }
+  ]
+}

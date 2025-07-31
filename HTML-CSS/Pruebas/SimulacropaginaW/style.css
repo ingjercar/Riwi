@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans",sans-serif;
+}
+.title{
+    font-size: 20px;
+    top: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+header{
+    background-image: url("img/banner.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 32rem;
+}
+.encabezado{
+    padding: 4%;
+    font-size: 22px;
+}
+.n-l{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    margin-bottom: 7%;
+    top: 2%;
+}
+.n-l > nav{
+    display: flex;
+    gap: 2rem;
+}
+.texto-bajo{
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+/* Encabezado arriba  ///////////////                    /// */
+
+
+
+
+/*  */
+.tipos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 10px;
+}
+.segundo,  hr{
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.imgtipo{
+    max-width: 100%;
+}
+
+
+
+.recetas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 10px;
+}
+.imgreceta{
+    max-width: 100%;
+}
+
+
+
+.beneficios{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 10px;
+}
+.imgbeneficio{
+    max-width: 100%;
+}
+
+
+
+/* estilo a la letra del contenido */
+h3{
+    font-size: 32px;
+    margin: 32px 0px;
+}
+h4{
+    margin-bottom: 1.33em;
+    margin-top: 0.8em;
+    font-size: 26px;
+}
+p{
+    font-size: 16px;
+    margin: 16px 0px;
+}
+
+
+/* estilo a los botones */
+button{
+    border-radius: 10px;
+    box-shadow: 10px 10px 18px rgb(5, 2, 169);
+}
+.leer{
+    margin: 0px 0px 20px;
+    padding: 10px 30px;
+    background: black;
+    color: antiquewhite;
+}
+.inf{
+    color: antiquewhite;
+    margin: 0px 0px 20px;
+    padding: 10px 30px;
+    display: flex;
+    margin-left: 70px;
+    background: brown;
+    box-shadow: 10px 10px 18px rgb(115, 113, 247);
+}
+
+
+
+.ralla2{
+    border: solid 1px;
+    color: aqua;
+    margin-right: 680px;
+    margin-bottom: 30px;
+}
+
+hr{
+    border: solid 1px;
+    color: aqua;
+}
+/* animacion para el titulo BlogDeCafe */
+@keyframes crece {/* Animacion que hace crecer el elmento  */
+    0%{
+        transform: scale(2);
+        font-size: 8rem;
+        color: rgb(59, 186, 236);
+
+    }
+}
+h1:hover{
+    animation: crece 0.3s forwards;
+    box-shadow: 10px 10px 18px rgb(115, 113, 247);
+    border-radius: 10px;
+}
+/* animacion para los botones */
+
+button:hover{
+    animation: wiggle 0.3s;
+    font-family: "Playwrite HU", cursive;
+}
+
+
+@keyframes wiggle{/* Animacion que hace vibrar elemento effects cundo se pasa el cursor por encima*/
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg);}
+    75%{transform: rotate(5deg);}
+    100%{transform: rotate(0deg);}
+}
+/*  */
+
+
+
+/* Pie de pagina//////////////////// */
+
+footer{
+    background: black;
+    margin: 80px 0px 0px;
+    padding: 0px 0px 30px;
+    bottom: 0;
+    height: 120px;
+    width: 100%; 
+}
+.pie{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.n-l-p{ 
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.navpie{
+    display: flex;
+    gap: 3rem;
+    margin-right: 340px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+
+
+/* Breakpoint para moviles */
+@media (max-width: 767px){
+    main{
+        padding: 10px 20px;
+    }
+    .n-l{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .n-l-p{
+        flex-direction: column;
+    }
+    .tipos{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

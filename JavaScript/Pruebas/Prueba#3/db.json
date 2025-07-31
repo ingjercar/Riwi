@@ -1,0 +1,99 @@
+{
+  "visitors": [
+    {
+      "name": "Quico",
+      "password": "Pereira",
+      "email": "mmguebo@gmail.com",
+      "id": "1"
+    },
+    {
+      "name": "Elver",
+      "password": "Galarga",
+      "email": "zzgry555@gmail.com",
+      "id": "2"
+    },
+    {
+      "id": "dbde",
+      "name": "miguel",
+      "password": "22222222",
+      "email": "seme@gmail.com"
+    },
+    {
+      "id": "a6bc",
+      "name": "pepe",
+      "password": "1111",
+      "email": "jodido@gmail.com"
+    }
+  ],
+  "events": [
+    {
+      "name": "100 años de soledad",
+      "description": "GGM",
+      "capacity": "1000",
+      "date": "2023-10-01",
+      "id": "1"
+    },
+    {
+      "name": "Mega orgia",
+      "description": "La orgia del siglo",
+      "capacity": "100",
+      "date": "2024-10-01",
+      "id": "2"
+    },
+    {
+      "id": "1625",
+      "name": "jueves de fiesta",
+      "description": "hay fiesta",
+      "capacity": "100000",
+      "date": "2026-02-01"
+    },
+    {
+      "id": "5458",
+      "name": "bless",
+      "description": "concierto en barrio antioquia",
+      "capacity": "40",
+      "date": "2025-06-05"
+    },
+    {
+      "id": "d7f6",
+      "name": "la solar",
+      "description": "festival de reggaeton",
+      "capacity": "1000",
+      "date": "2025-11-07"
+    },
+    {
+      "id": "bdf4",
+      "name": "reparticion de ñema",
+      "description": "hay fiesta",
+      "capacity": "4556",
+      "date": "3555-07-05"
+    },
+    {
+      "id": "7008",
+      "name": "fiesta",
+      "description": "de disfraces",
+      "capacity": "400",
+      "date": "2025-04-05"
+    }
+  ],
+  "admin": [
+    {
+      "name": "Terrenos",
+      "password": "mesa",
+      "email": "zzgry555@gmail.com",
+      "id": "2"
+    },
+    {
+      "name": "Pepe",
+      "password": "Anuel",
+      "email": "zzgry555@gmail.com",
+      "id": "3"
+    },
+    {
+      "id": "5feb",
+      "name": "el hueso",
+      "password": "1111",
+      "email": "eso@gmail.com"
+    }
+  ]
+}

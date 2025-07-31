@@ -1,0 +1,9 @@
+{ 
+    "eventos": [
+        {
+            "id": 1,
+            "nomb": "Evento de ejemplo",
+            "fecha": "2025-06-28"
+        }
+    ]
+}

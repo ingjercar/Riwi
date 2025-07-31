@@ -1,0 +1,18 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.view{
+    display: none;
+}
+
+.active{
+    display: block;
+}

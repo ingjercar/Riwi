@@ -1,0 +1,109 @@
+
+#introduction {
+    display: flex;         /* Contenedor donde esta el primer parrafo */
+    border: 2px solid #b49e54;
+    padding: 20px;
+    background-image: url(/img/fancy.jpg);
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+* {
+    font-family: "Roboto Slab", serif;/* fuente de todo el texto */
+}
+div {
+    color: rgb(99, 99, 216);
+}
+.highlight {
+    color: red;/* color del texto dentro de las cajas */
+}
+#special {
+    color: green;
+}
+body{
+    background-image: url(/img/fan2.3.jpg)/* imajen de fondo */
+}
+
+.box {
+    background-image: url(/img/fancy.jpg);/* dos cajas y sus detalles, como tamaño, sombra*/
+    border: 2px solid #b49e54;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 1s ;
+    transition: rotate 2s;/* tiempo de tranciciones al pasarle el cursor por encima */
+    transition: padding 1s;
+}   
+.box:hover {
+    background-color: #5e656b60;/* lo que pasa al tocar una de las cajas */
+    text-decoration-line: underline;
+    padding: 30px;
+    rotate: 1deg;
+}
+
+
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    padding: 10px;
+}
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: rotate(45deg);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+a {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);/* boton */
+    padding: 8px;
+    transition: background-color 1s ;
+    transition: padding 1s;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);/* boton despued de transición con hover*/
+    padding: 11px;
+    box-shadow: #b49e54;
+    border: #b49e54;
+
+}
+
+.box::before {
+    content: "New!";
+    color: red;
+    font-weight: bold;
+}
+
+.rotate-box { 
+    animation: fade 2s ease-in-out;/* la caja amarilla*/
+}
+.box {
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;/* animacion al entrar o refrescar la página */
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/* el footer */
+    justify-content: end;
+}
